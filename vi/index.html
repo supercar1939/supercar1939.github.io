@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HAT | Trần Anh Huy</title>
+<meta name="description" content="HAT, studio của nhà thiết kế concept ô tô Trần Anh Huy: thiết kế concept, body kit đã vào sản xuất và diễn họa. Nổi bật: mô hình 3D bộ kit VF7 Widebody.">
+<meta name="theme-color" content="#121519">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;1,800;1,900&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HAT | Trần Anh Huy, thiết kế concept ô tô">
+<meta property="og:description" content="Thiết kế concept và diễn họa ô tô của Trần Anh Huy. Body kit sản xuất thật, xe concept và tem xe. Để ý tưởng trông như có thật.">
+<meta property="og:url" content="https://supercar1939.github.io/vi/">
+<meta property="og:image" content="https://supercar1939.github.io/assets/og-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" hreflang="en" href="https://supercar1939.github.io/">
+<link rel="alternate" hreflang="vi" href="https://supercar1939.github.io/vi/">
+<link rel="icon" href="../assets/favicon.png" type="image/png">
+<link rel="stylesheet" href="../styles.css?v=5dd5b192">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <span class="logo-mask loader-logo"></span>
+  <div class="loader-bar"><i id="loader-fill"></i></div>
+  <span class="loader-pct mono" id="loader-pct">0%</span>
+</div>
+
+<canvas id="stage" tabindex="0" aria-label="Mô hình 3D tương tác của HAT VinFast VF7 Widebody. Kéo ngang, hoặc chọn rồi dùng phím mũi tên trái phải, để xoay xe."></canvas>
+<img class="fallback" id="fallback" src="../assets/img/fallback.webp" alt="HAT VinFast VF7 Widebody với tem HAT Cyber" hidden>
+
+<header class="nav" id="nav">
+  <a class="nav-brand" href="#top" aria-label="HAT, về đầu trang"><span class="logo-mask"></span></a>
+  <span class="nav-tag mono">[ Portfolio &rsquo;26 ]</span>
+  <nav class="nav-links mono" aria-label="Menu chính">
+    <a href="#build">VF7</a>
+    <a href="#work">Dự án</a>
+    <a href="#studio">Studio</a>
+    <a href="#instagram">Instagram</a>
+    <a href="about.html">Giới thiệu</a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
+  <a class="nav-lang mono" href="../" hreflang="en" lang="en" aria-label="English">EN</a>
+  <a class="nav-cta mono" href="#contact">Hợp tác</a>
+</header>
+
+<main>
+  <!-- HERO: the giant HAT mark is drawn behind the car by main.js -->
+  <section class="hero" id="top">
+    <span class="corner c-tl mono" aria-hidden="true">Chính xác</span>
+    <span class="corner c-tr mono" aria-hidden="true">Tốc độ</span>
+    <span class="corner c-bl mono" aria-hidden="true">Kiến trúc</span>
+    <span class="corner c-br mono" aria-hidden="true">HCMC / VN</span>
+
+    <div class="hero-top">
+      <div>
+        <p class="label mono">[ Dự án chính ]</p>
+        <h1 class="hero-title">VF7 Widebody</h1>
+        <p class="hero-sub mono">Tem xe / <span id="skin-title">HAT Cyber</span></p>
+      </div>
+      <p class="hero-note mono">Trần Anh Huy.<br>Nhà thiết kế concept ô tô.<br>Thiết kế concept &middot; Diễn họa.<br>TP. Hồ Chí Minh.</p>
+    </div>
+
+    <div class="hero-bottom">
+      <div class="livery" role="group" aria-label="Tem xe">
+        <p class="label mono">Tem xe <span id="skin-idx">01 / 03</span></p>
+        <p class="livery-name" id="skin-name">HAT Cyber</p>
+        <div class="livery-track" id="skin-track"></div>
+        <p class="livery-hint mono">Kéo để xoay &middot; &larr; &rarr; tem xe &middot; C góc máy &middot; L đèn</p>
+      </div>
+      <div class="cams" role="group" aria-label="Góc máy">
+        <p class="label mono">Góc máy <span id="cam-idx">01 / 07</span></p>
+        <div class="cam-row">
+          <button class="cam-step mono" id="cam-prev" type="button" aria-label="Góc máy trước">&larr;</button>
+          <p class="cam-name" id="cam-name" aria-live="polite">Góc 3/4</p>
+          <button class="cam-step mono" id="cam-next" type="button" aria-label="Góc máy sau">&rarr;</button>
+        </div>
+      </div>
+      <div class="hero-side">
+        <span class="big-count" id="skin-big" aria-hidden="true">/01</span>
+        <div class="hero-actions">
+          <button class="chip mono" id="lights" type="button" aria-pressed="false" hidden>Đèn</button>
+          <a class="btn mono" href="#work">Xem dự án</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker">
+    <button class="ticker-toggle mono" id="ticker-toggle" type="button" aria-pressed="false" aria-label="Dừng dải dịch vụ đang chạy">Dừng</button>
+    <div class="ticker-run mono" aria-hidden="true">
+      <span>Xe concept</span><span>Body kit</span><span>CMF</span><span>Tem xe</span><span>Diễn họa</span><span>Blender</span><span>Game concept</span><span>Nhận diện</span>
+      <span>Xe concept</span><span>Body kit</span><span>CMF</span><span>Tem xe</span><span>Diễn họa</span><span>Blender</span><span>Game concept</span><span>Nhận diện</span>
+    </div>
+  </div>
+
+  <!-- BUILD: transparent, the car stays visible -->
+  <section class="build" id="build">
+    <article class="panel panel-right" data-cam="side">
+      <div class="panel-box">
+        <p class="label mono">/ 01 &mdash; Dự án chính</p>
+        <h2>VinFast VF7 Widebody</h2>
+        <p>Bộ kit VF7 tự làm, không có khách hàng nào duyệt. Vè mở rộng hết mức bề mặt cho phép, cắt thẳng vào thân xe zin, đi kèm ốp sườn, lip trước, đuôi vịt và cánh gió sau. Làm song song với SEED, bộ kit bắt vít của NNC cho cùng mẫu xe đang bán, nó cho thấy trên SEED lựa chọn nào là do kỹ thuật, lựa chọn nào chỉ là thói quen. Xe còn lái được trong Assetto Corsa.</p>
+        <dl class="stats">
+          <div><dt>2.855<small>m</small></dt><dd class="mono">Chiều dài cơ sở, zin</dd></div>
+          <div><dt>3.1<small>M</small></dt><dd class="mono">Số tris gốc</dd></div>
+          <div><dt>12</dt><dd class="mono">Bản phối CMF</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="panel panel-left" data-cam="rear">
+      <div class="panel-box">
+        <p class="label mono">/ 02 &mdash; CMF</p>
+        <h2>Một thân xe, 12 bản phối</h2>
+        <p>Mỗi bộ tem được in lên UV atlas dựng riêng cho xe, nên nét tem chạy liền qua các khe ghép và chữ không bị ngược ở hai bên hông. Sơn bóng, satin, nhám và ngọc trai, đã so màu với ảnh chụp trong game.</p>
+        <div class="swatches" id="skin-swatches" role="group" aria-label="Chọn tem xe"></div>
+        <p class="label mono panel-cams-label" id="panel-cams-l">Góc máy</p>
+        <div class="cam-row panel-cams" role="group" aria-labelledby="panel-cams-l">
+          <button class="cam-step mono" id="pcam-prev" type="button" aria-label="Góc máy trước">&larr;</button>
+          <p class="cam-name" id="pcam-name" aria-live="polite">Góc 3/4 sau</p>
+          <button class="cam-step mono" id="pcam-next" type="button" aria-label="Góc máy sau">&rarr;</button>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="details" aria-labelledby="details-h">
+    <div class="sec-head sec-head-row">
+      <div>
+        <p class="label mono">[ VF7 Widebody &mdash; chi tiết ]</p>
+        <h2 id="details-h">Bộ kit,<br>cận cảnh</h2>
+      </div>
+      <div class="strip-nav mono">
+        <span id="strip-count">01 / 09</span>
+        <button type="button" id="strip-prev" aria-label="Chi tiết trước">&larr;</button>
+        <button type="button" id="strip-next" aria-label="Chi tiết sau">&rarr;</button>
+      </div>
+    </div>
+    <div class="strip" tabindex="0" aria-label="Ảnh chi tiết, cuộn ngang">
+      <figure><img src="../assets/img/details/film-front.webp" alt="Góc ba phần tư thấp phía trước của VF7 Widebody màu đồng trong hầm xe, đèn DRL chữ V bật sáng" loading="lazy"><figcaption class="mono"><b>01</b> Đầu xe, DRL chữ V <span>Phim Cycles</span></figcaption></figure>
+      <figure><img src="../assets/img/details/street-1.webp" alt="VF7 Widebody trắng đỗ ở cây xăng Sài Gòn ban đêm, ảnh AI" loading="lazy"><figcaption class="mono"><b>02</b> Sài Gòn, đêm <span>Ảnh AI</span></figcaption></figure>
+      <figure><img src="../assets/img/details/film-wheel.webp" alt="Cận cảnh mâm trước và vè mở rộng" loading="lazy"><figcaption class="mono"><b>03</b> Mâm và vè <span>Phim Cycles</span></figcaption></figure>
+      <figure><img src="../assets/img/details/street-2.webp" alt="Đuôi VF7 Widebody trắng trên phố Sài Gòn với cánh gió cổ thiên nga, ảnh AI" loading="lazy"><figcaption class="mono"><b>04</b> Cánh gió sau <span>Ảnh AI</span></figcaption></figure>
+      <figure><img src="../assets/img/details/film-side.webp" alt="Hông VF7 Widebody màu đồng với vè trước carbon" loading="lazy"><figcaption class="mono"><b>05</b> Vè carbon <span>Phim Cycles</span></figcaption></figure>
+      <figure><img src="../assets/img/details/street-3.webp" alt="VF7 Widebody trắng giữa dòng xe trước Nhà hát Thành phố, ảnh AI" loading="lazy"><figcaption class="mono"><b>06</b> Nhà hát Thành phố <span>Ảnh AI</span></figcaption></figure>
+      <figure><img src="../assets/img/details/film-quarter.webp" alt="Góc sau VF7 Widebody màu đồng với vè sau mở rộng" loading="lazy"><figcaption class="mono"><b>07</b> Góc sau <span>Phim Cycles</span></figcaption></figure>
+      <figure><img src="../assets/img/details/street-4.webp" alt="VF7 Widebody trắng chạy ban đêm, nhìn từ sau, ảnh AI" loading="lazy"><figcaption class="mono"><b>08</b> Đang lăn bánh <span>Ảnh AI</span></figcaption></figure>
+      <figure><img src="../assets/img/details/film-tail.webp" alt="Đuôi VF7 Widebody màu đồng với dải đèn hậu LED matrix bật sáng" loading="lazy"><figcaption class="mono"><b>09</b> Dải đèn hậu <span>Phim Cycles</span></figcaption></figure>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work" aria-labelledby="work-h">
+    <div class="sec-head sec-head-row">
+      <div>
+        <p class="label mono">[ Dự án chọn lọc ]</p>
+        <h2 id="work-h">Body kit,<br>concept, nhận diện <sup class="count mono">(12)</sup></h2>
+      </div>
+      <a class="link mono" href="https://www.behance.net/huyatran" target="_blank" rel="noopener">Tất cả dự án trên Behance &rarr;</a>
+    </div>
+    <div class="grid" id="work-grid"></div>
+  </section>
+
+  <!-- STUDIO: what HAT does and how -->
+  <section class="studio" id="studio" aria-labelledby="studio-h">
+    <div class="statement">
+      <p class="label mono">[ Studio ]</p>
+      <p class="statement-text" id="studio-h">Concept xe đẹp trên màn hình thì nhiều. Đủ thuyết phục để tin là làm ra được thì ít. <em>HAT làm ý tưởng trông như có thật.</em></p>
+      <p class="statement-sub">HAT là studio của Trần Anh Huy, nhà thiết kế concept ô tô tại TP. Hồ Chí Minh. Dáng xe đứng chắc, bề mặt có kiểm soát, và ánh sáng làm rõ hình khối thay vì che đi. Quy trình có AI hỗ trợ: Blender và CG để dựng hình, công cụ real-time để thử, AI để mở rộng phương án và hoàn thiện nhanh hơn. Công cụ thay đổi, mục tiêu thì không.</p>
+    </div>
+
+    <div class="caps">
+      <p class="label mono">Năng lực</p>
+      <ol class="cap-list">
+        <li><span class="mono">01</span><h3>Body kit</h3><p>Body kit trọn bộ đưa vào sản xuất: lắp thử trên xe, tính góc thoát khuôn. Bộ SEED của NNC cho VF7 và bộ Limo Green của B-Factory đang bán.</p></li>
+        <li><span class="mono">02</span><h3>Xe concept</h3><p>Biến ý tưởng ban đầu thành một chiếc xe nhìn là hiểu nó muốn nói gì, trước khi bắt tay làm thật.</p></li>
+        <li><span class="mono">03</span><h3>CMF &amp; tem xe</h3><p>Phối màu, vật liệu, bề mặt hoàn thiện và tem, thiết kế rồi dán lên xe thật.</p></li>
+        <li><span class="mono">04</span><h3>Diễn họa</h3><p>Hình thuyết trình, ảnh campaign, phim và xe real-time, làm trên quy trình có AI hỗ trợ để kịp tiến độ gấp.</p></li>
+        <li><span class="mono">05</span><h3>Nhận diện</h3><p>Thương hiệu, body kit và trang phục chung một hệ nhận diện, như No Noise Club.</p></li>
+      </ol>
+    </div>
+
+    <div class="clients">
+      <p class="label mono">Khách hàng</p>
+      <ul class="client-list">
+        <li><b>No Noise Club</b><span class="mono">Nhận diện &middot; Body kit &middot; Mâm</span></li>
+        <li><b>VinFast</b><span class="mono">Trưởng nhóm diễn họa</span></li>
+        <li><b>B-Factory Vietnam</b><span class="mono">Body kit sản xuất</span></li>
+        <li><b>BFBike</b><span class="mono">Phụ kiện xe máy điện</span></li>
+      </ul>
+    </div>
+
+    <div class="proof">
+      <p class="label mono">Thành phẩm</p>
+      <ol class="ship-list">
+        <li>
+          <p class="ship-client mono">No Noise Club <span>/ 2026</span></p>
+          <h3>Bộ kit SEED &amp; thương hiệu</h3>
+          <p class="ship-what">Nhận diện thương hiệu, bộ body kit bắt vít SEED cho VinFast VF7, thiết kế mâm và áo &ldquo;Silence is the Flex&rdquo;. Một nhận diện cho xe, trang phục và cộng đồng. <a class="link mono" href="https://www.behance.net/gallery/257470115/No-Noise-Club-Identity-Bodykit-Apparel" target="_blank" rel="noopener">Xem dự án &rarr;</a></p>
+          <p class="ship-status mono">Đang bán</p>
+        </li>
+        <li>
+          <p class="ship-client mono">B-Factory Vietnam</p>
+          <h3>Body kit Limo Green</h3>
+          <p class="ship-what">Thiết kế và đưa vào sản xuất.</p>
+          <p class="ship-status mono">Đang bán</p>
+        </li>
+        <li>
+          <p class="ship-client mono">B-Factory Vietnam</p>
+          <h3>VF3 concept</h3>
+          <p class="ship-what">Từ một concept: capô đã vào sản xuất, mẫu thử mặt ca-lăng lắp trên xe thật, và bộ tem được thiết kế rồi dán lên xe.</p>
+          <p class="ship-status mono">Đang sản xuất</p>
+        </li>
+        <li>
+          <p class="ship-client mono">VinFast</p>
+          <h3>Hơn 50 hình thuyết trình</h3>
+          <p class="ship-what">Bảy tháng làm Trưởng nhóm diễn họa, cho dòng Green và từ VF6 đến VF9.</p>
+          <p class="ship-status mono">Đã bàn giao</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="process">
+      <p class="label mono">Quy trình <span class="label-note">/ có AI hỗ trợ</span></p>
+      <ol class="steps">
+        <li><span class="mono">/ 01</span><h3>Phác thảo</h3><p>Tỷ lệ và các đường chính, trên bảng hai góc nhìn. AI mở rộng phương án ban đầu.</p></li>
+        <li><span class="mono">/ 02</span><h3>Dựng hình</h3><p>Bộ kit hoặc concept trong Blender, khớp kích thước xe thật.</p></li>
+        <li><span class="mono">/ 03</span><h3>CMF</h3><p>Sơn, vật liệu và tem xe, thử dưới ánh sáng, dùng AI để ra nhanh nhiều biến thể.</p></li>
+        <li><span class="mono">/ 04</span><h3>Render &amp; lái thử</h3><p>Ảnh và phim hoàn chỉnh từ Blender, hoàn thiện có AI hỗ trợ, cùng một chiếc xe real-time lái được.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section class="ig" id="instagram" aria-labelledby="ig-h">
+    <div class="sec-head sec-head-row">
+      <div>
+        <p class="label mono">[ Mới trên Instagram ]</p>
+        <h2 id="ig-h">@huy.a.tran</h2>
+      </div>
+      <a class="link mono" href="https://www.instagram.com/huy.a.tran/" target="_blank" rel="noopener">Theo dõi &rarr;</a>
+    </div>
+    <div class="ig-grid" id="ig-grid"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <div class="contact-main">
+      <div class="contact-left">
+        <p class="label mono">[ Cùng làm chiếc tiếp theo ]</p>
+        <h2 id="contact-h">Sẵn sàng làm chiếc xe tiếp theo của bạn?</h2>
+        <div class="contact-notes mono"><span>Từ concept đến render cuối</span><span>Freelance hoặc toàn thời gian</span></div>
+      </div>
+      <div class="contact-right">
+        <p class="label mono" id="need-l">Bạn cần gì?</p>
+        <div class="chips" role="group" aria-labelledby="need-l" id="needs">
+          <button class="chip mono" type="button" aria-pressed="true">Body kit</button>
+          <button class="chip mono" type="button" aria-pressed="false">Xe concept</button>
+          <button class="chip mono" type="button" aria-pressed="false">CMF &amp; tem xe</button>
+          <button class="chip mono" type="button" aria-pressed="false">Diễn họa</button>
+          <button class="chip mono" type="button" aria-pressed="false">Nhận diện</button>
+        </div>
+        <div class="contact-go">
+          <p class="mono">Bản phác đầu tiên bắt đầu<br>từ một email.</p>
+          <a class="talk" id="talk" href="mailto:Huy.a.tran1993@gmail.com?subject=H%E1%BB%8Fi%20v%E1%BB%81%20d%E1%BB%B1%20%C3%A1n%3A%20Body%20kit">Trao đổi ngay &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-cols">
+      <div><p class="label mono">Trao đổi dự án</p><a class="mono" href="mailto:Huy.a.tran1993@gmail.com">Huy.a.tran1993@gmail.com</a></div>
+      <div><p class="label mono">Làm việc tại</p><p class="mono">TP. Hồ Chí Minh, Việt Nam</p></div>
+      <div><p class="label mono">Theo dõi</p><p class="mono"><a href="https://www.behance.net/huyatran" target="_blank" rel="noopener">Behance</a> &nbsp; <a href="https://www.instagram.com/huy.a.tran/" target="_blank" rel="noopener">Instagram</a> &nbsp; <a href="https://www.linkedin.com/in/huytrandesign/" target="_blank" rel="noopener">LinkedIn</a></p></div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <nav class="foot-links mono" aria-label="Chân trang">
+      <a href="#build">VF7</a><a href="#work">Dự án</a><a href="#studio">Studio</a><a href="#instagram">Instagram</a><a href="about.html">Giới thiệu</a><a href="#top">Về đầu trang &uarr;</a>
+    </nav>
+    <span class="logo-mask foot-logo" role="img" aria-label="HAT"></span>
+    <div class="foot-meta mono">
+      <p>&copy; 2026 HAT / Huy Anh Tran</p>
+      <p>Bộ kit VF7 Widebody, tem xe, ánh sáng và chuyển động do Trần Anh Huy làm trong Blender; mô hình VF7 gốc là model mua sẵn. Bản 3D là mô hình real-time từ bản Assetto Corsa của anh; dải ảnh chi tiết gồm khung hình từ phim Cycles và cảnh đường phố render bằng AI, ảnh nào cũng ghi rõ.</p>
+      <p>VinFast và VF7 là thương hiệu của VinFast. HAT là dự án thiết kế độc lập, không liên kết với VinFast.</p>
+    </div>
+  </footer>
+</main>
+
+<script type="module" src="../main.js?v=5dd5b192"></script>
+<script>
+  setTimeout(function () {
+    var l = document.getElementById("loader");
+    if (l.classList.contains("done") || l.dataset.started) return;   // main.js marks the loader once it runs
+    document.getElementById("stage").hidden = true;
+    document.getElementById("fallback").hidden = false;
+    l.classList.add("done");
+  }, 15000);
+  document.getElementById("ticker-toggle").onclick = function () {
+    var on = this.getAttribute("aria-pressed") !== "true";
+    this.setAttribute("aria-pressed", String(on));
+    this.textContent = on ? "Chạy" : "Dừng";
+    this.parentNode.classList.toggle("paused", on);
+  };
+</script>
+</body>
+</html>
