@@ -18,7 +18,7 @@
 <link rel="alternate" hreflang="en" href="https://supercar1939.github.io/">
 <link rel="alternate" hreflang="vi" href="https://supercar1939.github.io/vi/">
 <link rel="icon" href="assets/favicon.png" type="image/png">
-<link rel="stylesheet" href="styles.css?v=7ef23246">
+<link rel="stylesheet" href="styles.css?v=e69b5fd4">
 <script type="importmap">
 { "imports": {
   "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
@@ -27,6 +27,7 @@
 </script>
 </head>
 <body>
+<a class="skip mono" href="#work">Skip to work</a>
 
 <div class="loader" id="loader" aria-hidden="true">
   <span class="logo-mask loader-logo"></span>
@@ -34,8 +35,6 @@
   <span class="loader-pct mono" id="loader-pct">0%</span>
 </div>
 
-<canvas id="stage" tabindex="0" aria-label="Interactive 3D model of the HAT VinFast VF7 Widebody. Drag sideways, or focus it and use the left and right arrow keys, to turn it."></canvas>
-<img class="fallback" id="fallback" src="assets/img/fallback.webp" alt="HAT VinFast VF7 Widebody in the HAT Cyber livery" hidden>
 
 <header class="nav" id="nav">
   <a class="nav-brand" href="#top" aria-label="HAT, back to top"><span class="logo-mask"></span></a>
@@ -51,6 +50,8 @@
   <a class="nav-lang mono" href="vi/" hreflang="vi" lang="vi" aria-label="Tiếng Việt">VI</a>
   <a class="nav-cta mono" href="#contact">Hire HAT</a>
 </header>
+<canvas id="stage" tabindex="0" aria-label="Interactive 3D model of the HAT VinFast VF7 Widebody. Drag sideways, or focus it and use the left and right arrow keys, to turn it."></canvas>
+<img class="fallback" id="fallback" src="assets/img/fallback.webp" alt="HAT VinFast VF7 Widebody in the HAT Cyber livery" hidden>
 
 <main>
   <!-- HERO: the giant HAT mark is drawn behind the car by main.js -->
@@ -174,7 +175,7 @@
   <section class="studio" id="studio" aria-labelledby="studio-h">
     <div class="statement">
       <p class="label mono">[ Studio ]</p>
-      <p class="statement-text" id="studio-h">Most car concepts look good on a screen. Not many feel like they could exist. <em>HAT makes the idea feel real.</em></p>
+      <h2 class="statement-text" id="studio-h">Most car concepts look good on a screen. Not many feel like they could exist. <em>HAT makes the idea feel real.</em></h2>
       <p class="statement-sub">HAT is the practice of Huy Anh Tran, automotive concept designer in Ho Chi Minh City. A strong stance, controlled surfaces, and light that shows the form instead of hiding it. The workflow is AI-assisted: Blender and CG for the form, real-time tools to test it, AI to explore and finish faster. The tools change, the goal doesn&rsquo;t.</p>
     </div>
 
@@ -296,7 +297,7 @@
   </footer>
 </main>
 
-<script type="module" src="main.js?v=7ef23246"></script>
+<script type="module" src="main.js?v=e69b5fd4"></script>
 <script>
   setTimeout(function () {
     var l = document.getElementById("loader");
@@ -322,5 +323,6 @@
     };
   });
 </script>
+<script src="reveal.js?v=e69b5fd4" defer></script>
 </body>
 </html>

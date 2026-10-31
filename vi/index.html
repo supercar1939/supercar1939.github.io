@@ -18,7 +18,7 @@
 <link rel="alternate" hreflang="en" href="https://supercar1939.github.io/">
 <link rel="alternate" hreflang="vi" href="https://supercar1939.github.io/vi/">
 <link rel="icon" href="../assets/favicon.png" type="image/png">
-<link rel="stylesheet" href="../styles.css?v=7ef23246">
+<link rel="stylesheet" href="../styles.css?v=e69b5fd4">
 <script type="importmap">
 { "imports": {
   "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
@@ -27,6 +27,7 @@
 </script>
 </head>
 <body>
+<a class="skip mono" href="#work">Xem dự án ngay</a>
 
 <div class="loader" id="loader" aria-hidden="true">
   <span class="logo-mask loader-logo"></span>
@@ -34,8 +35,6 @@
   <span class="loader-pct mono" id="loader-pct">0%</span>
 </div>
 
-<canvas id="stage" tabindex="0" aria-label="Mô hình 3D tương tác của HAT VinFast VF7 Widebody. Kéo ngang, hoặc chọn rồi dùng phím mũi tên trái phải, để xoay xe."></canvas>
-<img class="fallback" id="fallback" src="../assets/img/fallback.webp" alt="HAT VinFast VF7 Widebody với tem HAT Cyber" hidden>
 
 <header class="nav" id="nav">
   <a class="nav-brand" href="#top" aria-label="HAT, về đầu trang"><span class="logo-mask"></span></a>
@@ -51,6 +50,8 @@
   <a class="nav-lang mono" href="../" hreflang="en" lang="en" aria-label="English">EN</a>
   <a class="nav-cta mono" href="#contact">Hợp tác</a>
 </header>
+<canvas id="stage" tabindex="0" aria-label="Mô hình 3D tương tác của HAT VinFast VF7 Widebody. Kéo ngang, hoặc chọn rồi dùng phím mũi tên trái phải, để xoay xe."></canvas>
+<img class="fallback" id="fallback" src="../assets/img/fallback.webp" alt="HAT VinFast VF7 Widebody với tem HAT Cyber" hidden>
 
 <main>
   <!-- HERO: the giant HAT mark is drawn behind the car by main.js -->
@@ -174,7 +175,7 @@
   <section class="studio" id="studio" aria-labelledby="studio-h">
     <div class="statement">
       <p class="label mono">[ Studio ]</p>
-      <p class="statement-text" id="studio-h">Concept xe đẹp trên màn hình thì nhiều. Đủ thuyết phục để tin là làm ra được thì ít. <em>HAT làm ý tưởng trông như có thật.</em></p>
+      <h2 class="statement-text" id="studio-h">Concept xe đẹp trên màn hình thì nhiều. Đủ thuyết phục để tin là làm ra được thì ít. <em>HAT làm ý tưởng trông như có thật.</em></h2>
       <p class="statement-sub">HAT là studio của Trần Anh Huy, nhà thiết kế concept ô tô tại TP. Hồ Chí Minh. Dáng xe đứng chắc, bề mặt có kiểm soát, và ánh sáng làm rõ hình khối thay vì che đi. Quy trình có AI hỗ trợ: Blender và CG để dựng hình, công cụ real-time để thử, AI để mở rộng phương án và hoàn thiện nhanh hơn. Công cụ thay đổi, mục tiêu thì không.</p>
     </div>
 
@@ -296,7 +297,7 @@
   </footer>
 </main>
 
-<script type="module" src="../main.js?v=7ef23246"></script>
+<script type="module" src="../main.js?v=e69b5fd4"></script>
 <script>
   setTimeout(function () {
     var l = document.getElementById("loader");
@@ -322,5 +323,6 @@
     };
   });
 </script>
+<script src="../reveal.js?v=e69b5fd4" defer></script>
 </body>
 </html>
