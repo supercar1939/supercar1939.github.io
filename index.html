@@ -67,10 +67,19 @@
 
     <div class="hero-bottom">
       <div class="livery" role="group" aria-label="Livery">
-        <p class="label mono">Livery <span id="skin-idx">01 / 25</span></p>
+        <p class="label mono">Livery <span id="skin-idx">01 / 03</span></p>
         <p class="livery-name" id="skin-name">HAT Cyber</p>
         <div class="livery-track" id="skin-track"></div>
-        <p class="livery-hint mono">Drag to turn &middot; &larr; &rarr; liveries &middot; L lights</p>
+        <p class="livery-hint mono">Drag to turn &middot; &larr; &rarr; liveries &middot; C camera &middot; L lights</p>
+      </div>
+      <div class="cams" role="group" aria-label="Camera">
+        <p class="label mono">Camera <span id="cam-idx">01 / 07</span></p>
+        <p class="cam-name" id="cam-name">Three-quarter</p>
+        <div class="cam-row">
+          <button class="cam-step mono" id="cam-prev" type="button" aria-label="Previous camera">&larr;</button>
+          <div class="cam-nums" id="cam-row"></div>
+          <button class="cam-step mono" id="cam-next" type="button" aria-label="Next camera">&rarr;</button>
+        </div>
       </div>
       <div class="hero-side">
         <span class="big-count" id="skin-big" aria-hidden="true">/01</span>
@@ -100,7 +109,7 @@
         <dl class="stats">
           <div><dt>2.855<small>m</small></dt><dd class="mono">Wheelbase, stock</dd></div>
           <div><dt>3.1<small>M</small></dt><dd class="mono">Source triangles</dd></div>
-          <div><dt>25</dt><dd class="mono">CMF skins</dd></div>
+          <div><dt>12</dt><dd class="mono">CMF skins</dd></div>
         </dl>
       </div>
     </article>
@@ -108,17 +117,9 @@
     <article class="panel panel-left" data-cam="rear">
       <div class="panel-box">
         <p class="label mono">/ 02 &mdash; CMF</p>
-        <h2>One body, 25 finishes</h2>
+        <h2>One body, 12 finishes</h2>
         <p>Every livery is printed onto a body UV atlas built for the car, so lines run across panel gaps without seams and text reads the right way on both sides. Gloss, satin, matte and pearl finishes, colour-checked against in-game captures.</p>
         <div class="swatches" id="skin-swatches" role="group" aria-label="Pick a livery"></div>
-      </div>
-    </article>
-
-    <article class="panel panel-right" data-cam="front">
-      <div class="panel-box">
-        <p class="label mono">/ 03 &mdash; Light signature</p>
-        <h2>Lamps that work</h2>
-        <p>The VinFast V-bar DRL, the matrix tail bar and an animated ducktail strip are built as real lamp geometry. The segments flow out from the V logo here the same way they do in the game. Press L for headlights.</p>
       </div>
     </article>
   </section>
