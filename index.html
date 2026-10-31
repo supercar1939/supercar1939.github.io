@@ -346,6 +346,19 @@
     document.documentElement.classList.add("no-3d");
     l.classList.add("done");
   }, 15000);
+  (function () {
+    var run = document.querySelector(".ticker-run"), set = run.innerHTML, n = 1;
+    function fill() {
+      var half = run.scrollWidth / (2 * n);              // one copy of the list, as written in the HTML
+      var k = Math.max(1, Math.ceil(innerWidth / half));
+      if (k === n) return;
+      n = k;
+      run.innerHTML = new Array(k + 1).join(set);
+      run.style.animationDuration = 38 * k + "s";
+    }
+    fill();
+    addEventListener("resize", fill);
+  })();
   document.getElementById("ticker-toggle").onclick = function () {
     var on = this.getAttribute("aria-pressed") !== "true";
     this.setAttribute("aria-pressed", String(on));
