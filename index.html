@@ -74,10 +74,9 @@
       </div>
       <div class="cams" role="group" aria-label="Camera">
         <p class="label mono">Camera <span id="cam-idx">01 / 07</span></p>
-        <p class="cam-name" id="cam-name">Three-quarter</p>
         <div class="cam-row">
           <button class="cam-step mono" id="cam-prev" type="button" aria-label="Previous camera">&larr;</button>
-          <div class="cam-nums" id="cam-row"></div>
+          <p class="cam-name" id="cam-name" aria-live="polite">Three-quarter</p>
           <button class="cam-step mono" id="cam-next" type="button" aria-label="Next camera">&rarr;</button>
         </div>
       </div>
@@ -120,6 +119,12 @@
         <h2>One body, 12 finishes</h2>
         <p>Every livery is printed onto a body UV atlas built for the car, so lines run across panel gaps without seams and text reads the right way on both sides. Gloss, satin, matte and pearl finishes, colour-checked against in-game captures.</p>
         <div class="swatches" id="skin-swatches" role="group" aria-label="Pick a livery"></div>
+        <p class="label mono panel-cams-label" id="panel-cams-l">Camera</p>
+        <div class="cam-row panel-cams" role="group" aria-labelledby="panel-cams-l">
+          <button class="cam-step mono" id="pcam-prev" type="button" aria-label="Previous camera">&larr;</button>
+          <p class="cam-name" id="pcam-name" aria-live="polite">Rear three-quarter</p>
+          <button class="cam-step mono" id="pcam-next" type="button" aria-label="Next camera">&rarr;</button>
+        </div>
       </div>
     </article>
   </section>
