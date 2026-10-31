@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HAT | Huy Anh Tran</title>
+<meta name="description" content="HAT, the studio of automotive concept designer Huy Anh Tran: concept design, production body kits and visualization. Hero: the VF7 Widebody kit in 3D.">
+<meta name="theme-color" content="#121519">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;1,800;1,900&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HAT | Huy Anh Tran, automotive concept design">
+<meta property="og:description" content="Automotive concept design and visualization by Huy Anh Tran. Production body kits, concept cars and liveries. Make the idea feel real.">
+<meta property="og:url" content="https://supercar1939.github.io/">
+<meta property="og:image" content="https://supercar1939.github.io/assets/og-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="stylesheet" href="styles.css">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <span class="logo-mask loader-logo"></span>
+  <div class="loader-bar"><i id="loader-fill"></i></div>
+  <span class="loader-pct mono" id="loader-pct">0%</span>
+</div>
+
+<canvas id="stage" tabindex="0" aria-label="Interactive 3D model of the HAT VinFast VF7 Widebody. Drag sideways, or focus it and use the left and right arrow keys, to turn it."></canvas>
+<img class="fallback" id="fallback" src="assets/img/fallback.webp" alt="HAT VinFast VF7 Widebody in the HAT Cyber livery" hidden>
+
+<header class="nav" id="nav">
+  <a class="nav-brand" href="#top" aria-label="HAT, back to top"><span class="logo-mask"></span></a>
+  <span class="nav-tag mono">[ Portfolio &rsquo;26 ]</span>
+  <nav class="nav-links mono" aria-label="Main">
+    <a href="#build">VF7</a>
+    <a href="#work">Work</a>
+    <a href="#studio">Studio</a>
+    <a href="#instagram">Instagram</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="nav-cta mono" href="#contact">Hire HAT</a>
+</header>
+
+<main>
+  <!-- HERO: the giant HAT mark is drawn behind the car by main.js -->
+  <section class="hero" id="top">
+    <span class="corner c-tl mono" aria-hidden="true">Precision</span>
+    <span class="corner c-tr mono" aria-hidden="true">Speed</span>
+    <span class="corner c-bl mono" aria-hidden="true">Architecture</span>
+    <span class="corner c-br mono" aria-hidden="true">HCMC / VN</span>
+
+    <div class="hero-top">
+      <div>
+        <p class="label mono">[ Hero build ]</p>
+        <h1 class="hero-title">VF7 Widebody</h1>
+        <p class="hero-sub mono">Livery / <span id="skin-title">HAT Cyber</span></p>
+      </div>
+      <p class="hero-note mono">Huy Anh Tran.<br>Automotive concept designer.<br>Concept design &middot; Visualization.<br>Ho Chi Minh City.</p>
+    </div>
+
+    <div class="hero-bottom">
+      <div class="livery" role="group" aria-label="Livery">
+        <p class="label mono">Livery <span id="skin-idx">01 / 25</span></p>
+        <p class="livery-name" id="skin-name">HAT Cyber</p>
+        <div class="livery-track" id="skin-track"></div>
+        <p class="livery-hint mono">Drag to turn &middot; &larr; &rarr; liveries &middot; L lights</p>
+      </div>
+      <div class="hero-side">
+        <span class="big-count" id="skin-big" aria-hidden="true">/01</span>
+        <div class="hero-actions">
+          <button class="chip mono" id="lights" type="button" aria-pressed="false" hidden>Lights</button>
+          <a class="btn mono" href="#work">View work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker">
+    <button class="ticker-toggle mono" id="ticker-toggle" type="button" aria-pressed="false" aria-label="Pause the moving services list">Pause</button>
+    <div class="ticker-run mono" aria-hidden="true">
+      <span>Concept cars</span><span>Body kits</span><span>CMF</span><span>Liveries</span><span>Visualization</span><span>Blender</span><span>Assetto Corsa</span><span>Identity</span>
+      <span>Concept cars</span><span>Body kits</span><span>CMF</span><span>Liveries</span><span>Visualization</span><span>Blender</span><span>Assetto Corsa</span><span>Identity</span>
+    </div>
+  </div>
+
+  <!-- BUILD: transparent, the car stays visible -->
+  <section class="build" id="build">
+    <article class="panel panel-right" data-cam="side">
+      <div class="panel-box">
+        <p class="label mono">/ 01 &mdash; Hero build</p>
+        <h2>VinFast VF7 Widebody</h2>
+        <p>A VF7 kit with no customer to sign it off. The arches go as wide as the surfaces allow, cut into the stock body, with skirts, splitter, ducktail and rear wing. It sits beside SEED, the bolt-on NNC kit for the same car that is on sale now, and showed which choices on that kit were engineering and which were habit. It also runs in Assetto Corsa as a drivable car.</p>
+        <dl class="stats">
+          <div><dt>2.855<small>m</small></dt><dd class="mono">Wheelbase, stock</dd></div>
+          <div><dt>3.1<small>M</small></dt><dd class="mono">Source triangles</dd></div>
+          <div><dt>25</dt><dd class="mono">CMF skins</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="panel panel-left" data-cam="rear">
+      <div class="panel-box">
+        <p class="label mono">/ 02 &mdash; CMF</p>
+        <h2>One body, 25 finishes</h2>
+        <p>Every livery is printed onto a body UV atlas built for the car, so lines run across panel gaps without seams and text reads the right way on both sides. Gloss, satin, matte and pearl finishes, colour-checked against in-game captures.</p>
+        <div class="swatches" id="skin-swatches" role="group" aria-label="Pick a livery"></div>
+      </div>
+    </article>
+
+    <article class="panel panel-right" data-cam="front">
+      <div class="panel-box">
+        <p class="label mono">/ 03 &mdash; Light signature</p>
+        <h2>Lamps that work</h2>
+        <p>The VinFast V-bar DRL, the matrix tail bar and an animated ducktail strip are built as real lamp geometry. The segments flow out from the V logo here the same way they do in the game. Press L for headlights.</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="details" aria-labelledby="details-h">
+    <div class="sec-head sec-head-row">
+      <div>
+        <p class="label mono">[ VF7 Widebody &mdash; details ]</p>
+        <h2 id="details-h">The kit,<br>up close</h2>
+      </div>
+      <div class="strip-nav mono">
+        <span id="strip-count">01 / 09</span>
+        <button type="button" id="strip-prev" aria-label="Previous detail">&larr;</button>
+        <button type="button" id="strip-next" aria-label="Next detail">&rarr;</button>
+      </div>
+    </div>
+    <div class="strip" tabindex="0" aria-label="Detail renders, scroll sideways">
+      <figure><img src="assets/img/details/film-front.webp" alt="Low front three-quarter of the copper VF7 Widebody in a parking garage, V-bar DRL lit" loading="lazy"><figcaption class="mono"><b>01</b> Front, V-bar DRL <span>Cycles film</span></figcaption></figure>
+      <figure><img src="assets/img/details/street-1.webp" alt="White VF7 Widebody parked at a Saigon petrol station at night, AI render" loading="lazy"><figcaption class="mono"><b>02</b> Saigon, night <span>AI render</span></figcaption></figure>
+      <figure><img src="assets/img/details/film-wheel.webp" alt="Close-up of the front wheel and widened arch" loading="lazy"><figcaption class="mono"><b>03</b> Wheel and arch <span>Cycles film</span></figcaption></figure>
+      <figure><img src="assets/img/details/street-2.webp" alt="Rear of the white VF7 Widebody on a Saigon street with its swan-neck wings, AI render" loading="lazy"><figcaption class="mono"><b>04</b> Rear wings <span>AI render</span></figcaption></figure>
+      <figure><img src="assets/img/details/film-side.webp" alt="Side of the copper VF7 Widebody with the carbon front arch" loading="lazy"><figcaption class="mono"><b>05</b> Carbon arch <span>Cycles film</span></figcaption></figure>
+      <figure><img src="assets/img/details/street-3.webp" alt="White VF7 Widebody in traffic in front of the Saigon Opera House, AI render" loading="lazy"><figcaption class="mono"><b>06</b> Opera House <span>AI render</span></figcaption></figure>
+      <figure><img src="assets/img/details/film-quarter.webp" alt="Rear quarter of the copper VF7 Widebody with the widened rear arch" loading="lazy"><figcaption class="mono"><b>07</b> Rear quarter <span>Cycles film</span></figcaption></figure>
+      <figure><img src="assets/img/details/street-4.webp" alt="White VF7 Widebody driving at night, rear view, AI render" loading="lazy"><figcaption class="mono"><b>08</b> On the move <span>AI render</span></figcaption></figure>
+      <figure><img src="assets/img/details/film-tail.webp" alt="Tail of the copper VF7 Widebody with the lit matrix tail bar" loading="lazy"><figcaption class="mono"><b>09</b> Tail bar <span>Cycles film</span></figcaption></figure>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work" aria-labelledby="work-h">
+    <div class="sec-head sec-head-row">
+      <div>
+        <p class="label mono">[ Selected work ]</p>
+        <h2 id="work-h">Body kits,<br>concepts, identity <sup class="count mono">(12)</sup></h2>
+      </div>
+      <a class="link mono" href="https://www.behance.net/huyatran" target="_blank" rel="noopener">All projects on Behance &rarr;</a>
+    </div>
+    <div class="grid" id="work-grid"></div>
+  </section>
+
+  <!-- STUDIO: what HAT does and how -->
+  <section class="studio" id="studio" aria-labelledby="studio-h">
+    <div class="statement">
+      <p class="label mono">[ Studio ]</p>
+      <p class="statement-text" id="studio-h">Most car concepts look good on a screen. Not many feel like they could exist. <em>HAT makes the idea feel real.</em></p>
+      <p class="statement-sub">HAT is the practice of Huy Anh Tran, automotive concept designer in Ho Chi Minh City. A strong stance, controlled surfaces, and light that shows the form instead of hiding it. The workflow is AI-assisted: Blender and CG for the form, real-time tools to test it, AI to explore and finish faster. The tools change, the goal doesn&rsquo;t.</p>
+    </div>
+
+    <div class="caps">
+      <p class="label mono">Capabilities</p>
+      <ol class="cap-list">
+        <li><span class="mono">01</span><h3>Body kits</h3><p>Full kits taken to production, through fitment checks and mould draft. The NNC SEED kit for the VF7 and the B-Factory Limo Green kit are on sale now.</p></li>
+        <li><span class="mono">02</span><h3>Concept cars</h3><p>An early idea turned into a car you read instantly: what it is trying to say, before anything gets built.</p></li>
+        <li><span class="mono">03</span><h3>CMF &amp; liveries</h3><p>Colour, material and finish sets and wraps, designed and applied to real cars.</p></li>
+        <li><span class="mono">04</span><h3>Visualization</h3><p>Presentation visuals, campaign images, film and real-time cars, on an AI-assisted pipeline built for tight timelines.</p></li>
+        <li><span class="mono">05</span><h3>Identity</h3><p>Brand, body kit and apparel as one visual system, as for No Noise Club.</p></li>
+      </ol>
+    </div>
+
+    <div class="clients">
+      <p class="label mono">Past clients</p>
+      <ul class="client-list">
+        <li><b>No Noise Club</b><span class="mono">Identity &middot; Body kit &middot; Wheels</span></li>
+        <li><b>VinFast</b><span class="mono">Visualization lead</span></li>
+        <li><b>B-Factory Vietnam</b><span class="mono">Production body kits</span></li>
+        <li><b>BFBike</b><span class="mono">E-scooter accessories</span></li>
+      </ul>
+    </div>
+
+    <div class="proof">
+      <p class="label mono">Shipped</p>
+      <ol class="ship-list">
+        <li>
+          <p class="ship-client mono">No Noise Club <span>/ 2026</span></p>
+          <h3>SEED kit &amp; brand</h3>
+          <p class="ship-what">The brand identity, the SEED bolt-on body kit for the VinFast VF7, the wheel design and the &ldquo;Silence is the Flex&rdquo; shirts. One identity for the car, the apparel and the community. <a class="link mono" href="https://www.behance.net/gallery/257470115/No-Noise-Club-Identity-Bodykit-Apparel" target="_blank" rel="noopener">Case study &rarr;</a></p>
+          <p class="ship-status mono">On sale</p>
+        </li>
+        <li>
+          <p class="ship-client mono">B-Factory Vietnam</p>
+          <h3>Limo Green body kit</h3>
+          <p class="ship-what">Designed and taken to production.</p>
+          <p class="ship-status mono">On sale</p>
+        </li>
+        <li>
+          <p class="ship-client mono">B-Factory Vietnam</p>
+          <h3>VF3 concept</h3>
+          <p class="ship-what">From one concept: the CAPO hood in production, a grille prototype on a real car, and a wrap designed and applied.</p>
+          <p class="ship-status mono">In production</p>
+        </li>
+        <li>
+          <p class="ship-client mono">VinFast</p>
+          <h3>50+ presentation visuals</h3>
+          <p class="ship-what">Seven months as Visualization Lead, across the Green lineup and VF6 to VF9.</p>
+          <p class="ship-status mono">Delivered</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="process">
+      <p class="label mono">Process <span class="label-note">/ AI-assisted</span></p>
+      <ol class="steps">
+        <li><span class="mono">/ 01</span><h3>Sketch</h3><p>Proportions and the key lines, as a two-view board. AI widens the early options.</p></li>
+        <li><span class="mono">/ 02</span><h3>Model</h3><p>The kit or the concept in Blender, fitted to the real car&rsquo;s dimensions.</p></li>
+        <li><span class="mono">/ 03</span><h3>CMF</h3><p>Paint, materials and liveries, tested in light, with AI for fast variations.</p></li>
+        <li><span class="mono">/ 04</span><h3>Render &amp; drive</h3><p>Final images and film from Blender with AI-assisted finishing, plus a real-time car you can drive.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section class="ig" id="instagram" aria-labelledby="ig-h">
+    <div class="sec-head sec-head-row">
+      <div>
+        <p class="label mono">[ Latest on Instagram ]</p>
+        <h2 id="ig-h">@huy.a.tran</h2>
+      </div>
+      <a class="link mono" href="https://www.instagram.com/huy.a.tran/" target="_blank" rel="noopener">Follow &rarr;</a>
+    </div>
+    <div class="ig-grid" id="ig-grid"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <div class="contact-main">
+      <div class="contact-left">
+        <p class="label mono">[ Let&rsquo;s build the next one ]</p>
+        <h2 id="contact-h">Ready to build your next car?</h2>
+        <div class="contact-notes mono"><span>Concept to final render</span><span>Freelance or full-time</span></div>
+      </div>
+      <div class="contact-right">
+        <p class="label mono" id="need-l">What do you need?</p>
+        <div class="chips" role="group" aria-labelledby="need-l" id="needs">
+          <button class="chip mono" type="button" aria-pressed="true">Body kit</button>
+          <button class="chip mono" type="button" aria-pressed="false">Concept car</button>
+          <button class="chip mono" type="button" aria-pressed="false">CMF &amp; livery</button>
+          <button class="chip mono" type="button" aria-pressed="false">Visualization</button>
+          <button class="chip mono" type="button" aria-pressed="false">Identity</button>
+        </div>
+        <div class="contact-go">
+          <p class="mono">The first sketch starts<br>with one email.</p>
+          <a class="talk" id="talk" href="mailto:Huy.a.tran1993@gmail.com?subject=Project%20enquiry%3A%20Body%20kit">Let&rsquo;s talk &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-cols">
+      <div><p class="label mono">Discuss the project</p><a class="mono" href="mailto:Huy.a.tran1993@gmail.com">Huy.a.tran1993@gmail.com</a></div>
+      <div><p class="label mono">Based in</p><p class="mono">Ho Chi Minh City, Vietnam</p></div>
+      <div><p class="label mono">Follow</p><p class="mono"><a href="https://www.behance.net/huyatran" target="_blank" rel="noopener">Behance</a> &nbsp; <a href="https://www.instagram.com/huy.a.tran/" target="_blank" rel="noopener">Instagram</a> &nbsp; <a href="https://www.linkedin.com/in/huytrandesign/" target="_blank" rel="noopener">LinkedIn</a></p></div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <nav class="foot-links mono" aria-label="Footer">
+      <a href="#build">VF7</a><a href="#work">Work</a><a href="#studio">Studio</a><a href="#instagram">Instagram</a><a href="#top">Back to top &uarr;</a>
+    </nav>
+    <span class="logo-mask foot-logo" role="img" aria-label="HAT"></span>
+    <div class="foot-meta mono">
+      <p>&copy; 2026 HAT / Huy Anh Tran</p>
+      <p>VF7 Widebody kit, livery, lighting and animation by Huy Anh Tran in Blender; the base VF7 model is a purchased asset. The 3D view is the real-time model from his Assetto Corsa build; the detail strip mixes stills from his Cycles film with AI-rendered street scenes, each labelled.</p>
+      <p>VinFast and VF7 are trademarks of VinFast. HAT is an independent design study, not affiliated with VinFast.</p>
+    </div>
+  </footer>
+</main>
+
+<script type="module" src="main.js"></script>
+<script>
+  setTimeout(function () {
+    var l = document.getElementById("loader");
+    if (l.classList.contains("done") || l.dataset.started) return;   // main.js marks the loader once it runs
+    document.getElementById("stage").hidden = true;
+    document.getElementById("fallback").hidden = false;
+    l.classList.add("done");
+  }, 15000);
+  document.getElementById("ticker-toggle").onclick = function () {
+    var on = this.getAttribute("aria-pressed") !== "true";
+    this.setAttribute("aria-pressed", String(on));
+    this.textContent = on ? "Play" : "Pause";
+    this.parentNode.classList.toggle("paused", on);
+  };
+</script>
+</body>
+</html>
