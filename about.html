@@ -18,7 +18,7 @@
 <link rel="alternate" hreflang="en" href="https://supercar1939.github.io/about.html">
 <link rel="alternate" hreflang="vi" href="https://supercar1939.github.io/vi/about.html">
 <link rel="icon" href="assets/favicon.png" type="image/png">
-<link rel="stylesheet" href="styles.css?v=be0323e7">
+<link rel="stylesheet" href="styles.css?v=b619b3d1">
 </head>
 <body class="page-about">
 
@@ -110,7 +110,7 @@
   <section class="ab-cta" id="talk" aria-labelledby="talk-h">
     <h2 id="talk-h">Have a car<br>in mind?</h2>
     <div class="ab-cta-links">
-      <a class="btn mono" href="mailto:Huy.a.tran1993@gmail.com?subject=Project%20enquiry">Email me</a>
+      <div class="ab-mail"><a class="btn mono" href="mailto:Huy.a.tran1993@gmail.com?subject=Project%20enquiry">Email me</a> <button class="copy-mail mono" type="button" data-email="Huy.a.tran1993@gmail.com" data-done="Copied">Copy email</button></div>
       <p class="mono"><a href="https://www.linkedin.com/in/huytrandesign/" target="_blank" rel="noopener">LinkedIn</a> &nbsp; <a href="https://www.behance.net/huyatran" target="_blank" rel="noopener">Behance</a> &nbsp; <a href="https://www.instagram.com/huy.a.tran/" target="_blank" rel="noopener">Instagram</a></p>
     </div>
   </section>
@@ -125,5 +125,16 @@
     </div>
   </footer>
 </main>
+<script>
+  // copy the address for visitors whose browser has no mail app behind mailto:
+  document.querySelectorAll(".copy-mail").forEach(function (b) {
+    var label = b.textContent;
+    b.onclick = function () {
+      var done = function () { b.textContent = b.dataset.done; setTimeout(function () { b.textContent = label; }, 1800); };
+      if (navigator.clipboard) navigator.clipboard.writeText(b.dataset.email).then(done, function () { prompt("", b.dataset.email); });
+      else prompt("", b.dataset.email);
+    };
+  });
+</script>
 </body>
 </html>

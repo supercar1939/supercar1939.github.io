@@ -18,7 +18,7 @@
 <link rel="alternate" hreflang="en" href="https://supercar1939.github.io/">
 <link rel="alternate" hreflang="vi" href="https://supercar1939.github.io/vi/">
 <link rel="icon" href="assets/favicon.png" type="image/png">
-<link rel="stylesheet" href="styles.css?v=be0323e7">
+<link rel="stylesheet" href="styles.css?v=b619b3d1">
 <script type="importmap">
 { "imports": {
   "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
@@ -278,7 +278,7 @@
     </div>
 
     <div class="contact-cols">
-      <div><p class="label mono">Discuss the project</p><a class="mono" href="mailto:Huy.a.tran1993@gmail.com">Huy.a.tran1993@gmail.com</a></div>
+      <div><p class="label mono">Discuss the project</p><a class="mono" href="mailto:Huy.a.tran1993@gmail.com">Huy.a.tran1993@gmail.com</a> <button class="copy-mail mono" type="button" data-email="Huy.a.tran1993@gmail.com" data-done="Copied">Copy email</button></div>
       <div><p class="label mono">Based in</p><p class="mono">Ho Chi Minh City, Vietnam</p></div>
       <div><p class="label mono">Follow</p><p class="mono"><a href="https://www.behance.net/huyatran" target="_blank" rel="noopener">Behance</a> &nbsp; <a href="https://www.instagram.com/huy.a.tran/" target="_blank" rel="noopener">Instagram</a> &nbsp; <a href="https://www.linkedin.com/in/huytrandesign/" target="_blank" rel="noopener">LinkedIn</a></p></div>
     </div>
@@ -297,7 +297,7 @@
   </footer>
 </main>
 
-<script type="module" src="main.js?v=be0323e7"></script>
+<script type="module" src="main.js?v=b619b3d1"></script>
 <script>
   setTimeout(function () {
     var l = document.getElementById("loader");
@@ -312,6 +312,16 @@
     this.textContent = on ? "Play" : "Pause";
     this.parentNode.classList.toggle("paused", on);
   };
+</script>
+<script>
+  document.querySelectorAll(".copy-mail").forEach(function (b) {
+    var label = b.textContent;
+    b.onclick = function () {
+      var done = function () { b.textContent = b.dataset.done; setTimeout(function () { b.textContent = label; }, 1800); };
+      if (navigator.clipboard) navigator.clipboard.writeText(b.dataset.email).then(done, function () { prompt("", b.dataset.email); });
+      else prompt("", b.dataset.email);
+    };
+  });
 </script>
 </body>
 </html>
