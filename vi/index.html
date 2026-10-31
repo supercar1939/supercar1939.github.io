@@ -19,7 +19,13 @@
 <link rel="alternate" hreflang="vi" href="https://huyanhtran.com/vi/">
 <link rel="icon" href="../assets/favicon.png" type="image/png">
 <link rel="stylesheet" href="../styles.css?v=2508dc8b">
-<!-- start the heavy downloads at once, not after three.js and main.js have parsed -->
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+} }
+</script>
+<!-- start the heavy downloads at once, not after three.js and main.js have parsed (after the import map: a module that starts loading before it makes the browser ignore the map) -->
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preload" href="../assets/vf7.glb" as="fetch" type="model/gltf-binary" crossorigin>
 <link rel="preload" href="../assets/skins.json" as="fetch" type="application/json" crossorigin>
@@ -30,12 +36,6 @@
 <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/postprocessing/EffectComposer.js" crossorigin>
 <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/postprocessing/UnrealBloomPass.js" crossorigin>
 <link rel="modulepreload" href="../main.js?v=2508dc8b">
-<script type="importmap">
-{ "imports": {
-  "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
-  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
-} }
-</script>
 </head>
 <body>
 <a class="skip mono" href="#work">Xem dự án ngay</a>
