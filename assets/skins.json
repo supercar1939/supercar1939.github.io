@@ -1230,8 +1230,8 @@
     }
    },
    "swatch": [
-    "#e8e7e3",
-    "#181719"
+    "#6e747d",
+    "#101013"
    ]
   },
   {
@@ -1248,9 +1248,9 @@
     },
     "Car_Paint___Black_grey_D.dds": {
      "color": [
-      0.8706,
-      0.3294,
-      0.0863,
+      0.0706,
+      0.0706,
+      0.0784,
       1.0
      ]
     },
@@ -1272,9 +1272,9 @@
     },
     "LAMP_ducktail_D.dds": {
      "color": [
-      0.8706,
-      0.3294,
-      0.0863,
+      0.0706,
+      0.0706,
+      0.0784,
       1.0
      ]
     },
@@ -1302,9 +1302,9 @@
     },
     "Metal___Chrome___Rough_dark_D.dds": {
      "color": [
-      0.8706,
-      0.3294,
-      0.0863,
+      0.0706,
+      0.0706,
+      0.0784,
       1.0
      ]
     },
@@ -1326,9 +1326,9 @@
     },
     "carbon_weave_D.dds": {
      "color": [
-      0.8706,
-      0.3294,
-      0.0863,
+      0.0706,
+      0.0706,
+      0.0784,
       1.0
      ]
     },
@@ -1349,12 +1349,7 @@
      ]
     },
     "paint.dds": {
-     "color": [
-      0.9098,
-      0.9059,
-      0.8902,
-      1.0
-     ]
+     "image": "assets/skins/15_insteroid/paint.webp"
     },
     "rot_D.dds": {
      "color": [
@@ -1374,8 +1369,286 @@
     }
    },
    "swatch": [
-    "#e8e7e3",
-    "#de5416"
+    "#000000",
+    "#a2bbbd"
+   ]
+  },
+  {
+   "id": "08_solar_yellow",
+   "name": "HAT Solar Yellow",
+   "overrides": {
+    "Caliper_D.dds": {
+     "color": [
+      0.0863,
+      0.0863,
+      0.0902,
+      1.0
+     ]
+    },
+    "Car_Paint___Black_grey_D.dds": {
+     "color": [
+      0.8784,
+      0.6039,
+      0.0824,
+      1.0
+     ]
+    },
+    "GLASS___windshield_001_D.dds": {
+     "color": [
+      0.4314,
+      0.502,
+      0.5412,
+      0.1765
+     ]
+    },
+    "GLASS___windshield_D.dds": {
+     "color": [
+      0.0941,
+      0.102,
+      0.1098,
+      0.1765
+     ]
+    },
+    "LAMP_ducktail_D.dds": {
+     "color": [
+      0.0039,
+      0.0235,
+      0.1412,
+      1.0
+     ]
+    },
+    "LAMP_headlamp_D.dds": {
+     "color": [
+      0.9294,
+      0.9412,
+      1.0,
+      1.0
+     ]
+    },
+    "LAMP_headlamp_L_D.dds": {
+     "color": [
+      0.8471,
+      0.902,
+      1.0,
+      1.0
+     ]
+    },
+    "M_RimBadge_Max_D.dds": {
+     "image": "assets/skins/08_solar_yellow/M_RimBadge_Max_D.webp"
+    },
+    "M_Rim_NoTintTurbofan_Max_D.dds": {
+     "image": "assets/skins/08_solar_yellow/M_Rim_NoTintTurbofan_Max_D.webp"
+    },
+    "Metal___Chrome___Rough_dark_D.dds": {
+     "color": [
+      0.0039,
+      0.0235,
+      0.1412,
+      1.0
+     ]
+    },
+    "Redmetal_D.dds": {
+     "color": [
+      0.0863,
+      0.0863,
+      0.0902,
+      1.0
+     ]
+    },
+    "Weis_D.dds": {
+     "color": [
+      0.2039,
+      0.2039,
+      0.2039,
+      1.0
+     ]
+    },
+    "carbon_weave_D.dds": {
+     "color": [
+      0.0039,
+      0.0235,
+      0.1412,
+      1.0
+     ]
+    },
+    "glass_D.dds": {
+     "color": [
+      0.0392,
+      0.0392,
+      0.0392,
+      0.2353
+     ]
+    },
+    "orangeglass__1_D.dds": {
+     "color": [
+      0.1176,
+      0.1176,
+      0.1255,
+      0.7451
+     ]
+    },
+    "paint.dds": {
+     "image": "assets/skins/08_solar_yellow/paint.webp"
+    },
+    "rot_D.dds": {
+     "color": [
+      0.2039,
+      0.2039,
+      0.2039,
+      1.0
+     ]
+    },
+    "trim_black_D.dds": {
+     "color": [
+      0.0706,
+      0.0706,
+      0.0745,
+      1.0
+     ]
+    }
+   },
+   "swatch": [
+    "#df9a14",
+    "#493b2e"
+   ]
+  },
+  {
+   "id": "14_bubblegum",
+   "name": "HAT Bubblegum",
+   "overrides": {
+    "Caliper_D.dds": {
+     "color": [
+      0.0863,
+      0.0863,
+      0.0902,
+      1.0
+     ]
+    },
+    "Car_Paint___Black_grey_D.dds": {
+     "color": [
+      0.8039,
+      0.8078,
+      0.8235,
+      1.0
+     ]
+    },
+    "GLASS___windshield_001_D.dds": {
+     "color": [
+      0.4314,
+      0.502,
+      0.5412,
+      0.1765
+     ]
+    },
+    "GLASS___windshield_D.dds": {
+     "color": [
+      0.0941,
+      0.102,
+      0.1098,
+      0.1765
+     ]
+    },
+    "LAMP_ducktail_D.dds": {
+     "color": [
+      0.0706,
+      0.0706,
+      0.0784,
+      1.0
+     ]
+    },
+    "LAMP_headlamp_D.dds": {
+     "color": [
+      0.9294,
+      0.9412,
+      1.0,
+      1.0
+     ]
+    },
+    "LAMP_headlamp_L_D.dds": {
+     "color": [
+      0.8471,
+      0.902,
+      1.0,
+      1.0
+     ]
+    },
+    "M_RimBadge_Max_D.dds": {
+     "image": "assets/skins/14_bubblegum/M_RimBadge_Max_D.webp"
+    },
+    "M_Rim_NoTintTurbofan_Max_D.dds": {
+     "image": "assets/skins/14_bubblegum/M_Rim_NoTintTurbofan_Max_D.webp"
+    },
+    "Metal___Chrome___Rough_dark_D.dds": {
+     "color": [
+      0.0706,
+      0.0706,
+      0.0784,
+      1.0
+     ]
+    },
+    "Redmetal_D.dds": {
+     "color": [
+      0.0863,
+      0.0863,
+      0.0902,
+      1.0
+     ]
+    },
+    "Weis_D.dds": {
+     "color": [
+      0.2039,
+      0.2039,
+      0.2039,
+      1.0
+     ]
+    },
+    "carbon_weave_D.dds": {
+     "color": [
+      0.0706,
+      0.0706,
+      0.0784,
+      1.0
+     ]
+    },
+    "glass_D.dds": {
+     "color": [
+      0.0392,
+      0.0392,
+      0.0392,
+      0.2353
+     ]
+    },
+    "orangeglass__1_D.dds": {
+     "color": [
+      0.1176,
+      0.1176,
+      0.1255,
+      0.7451
+     ]
+    },
+    "paint.dds": {
+     "image": "assets/skins/14_bubblegum/paint.webp"
+    },
+    "rot_D.dds": {
+     "color": [
+      0.2039,
+      0.2039,
+      0.2039,
+      1.0
+     ]
+    },
+    "trim_black_D.dds": {
+     "color": [
+      0.0706,
+      0.0706,
+      0.0745,
+      1.0
+     ]
+    }
+   },
+   "swatch": [
+    "#d591ba",
+    "#dbaec8"
    ]
   },
   {
@@ -1499,8 +1772,8 @@
     }
    },
    "swatch": [
-    "#939ca0",
-    "#7f6278"
+    "#959da1",
+    "#747a7d"
    ]
   },
   {
@@ -1517,9 +1790,9 @@
     },
     "Car_Paint___Black_grey_D.dds": {
      "color": [
-      0.7686,
-      0.2275,
-      0.6196,
+      0.549,
+      0.3529,
+      0.4235,
       1.0
      ]
     },
@@ -1541,9 +1814,9 @@
     },
     "LAMP_ducktail_D.dds": {
      "color": [
-      0.1569,
-      0.1569,
-      0.1647,
+      0.0196,
+      0.0196,
+      0.0196,
       1.0
      ]
     },
@@ -1585,6 +1858,14 @@
       1.0
      ]
     },
+    "carbon_weave_D.dds": {
+     "color": [
+      0.0196,
+      0.0196,
+      0.0196,
+      1.0
+     ]
+    },
     "glass_D.dds": {
      "color": [
       0.0392,
@@ -1622,8 +1903,8 @@
     }
    },
    "swatch": [
-    "#f93a98",
-    "#170e14"
+    "#050505",
+    "#a16b8d"
    ]
   },
   {
