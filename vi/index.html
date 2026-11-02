@@ -40,7 +40,7 @@
 <link rel="alternate" hreflang="en" href="https://huyanhtran.com/">
 <link rel="alternate" hreflang="vi" href="https://huyanhtran.com/vi/">
 <link rel="icon" href="../assets/favicon.png" type="image/png">
-<link rel="stylesheet" href="../styles.css?v=dd1af678">
+<link rel="stylesheet" href="../styles.css?v=ef3b06dd">
 <script type="importmap">
 { "imports": {
   "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
@@ -49,15 +49,15 @@
 </script>
 <!-- start the heavy downloads at once, not after three.js and main.js have parsed (after the import map: a module that starts loading before it makes the browser ignore the map) -->
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="preload" href="../assets/vf7.glb" as="fetch" type="model/gltf-binary" crossorigin>
-<link rel="preload" href="../assets/skins.json" as="fetch" type="application/json" crossorigin>
+<link rel="preload" href="../assets/vf7.glb?v=1148f343" as="fetch" type="model/gltf-binary" crossorigin>
+<link rel="preload" href="../assets/skins.json?v=1148f343" as="fetch" type="application/json" crossorigin>
 <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js" crossorigin>
 <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/loaders/GLTFLoader.js" crossorigin>
 <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/libs/meshopt_decoder.module.js" crossorigin>
 <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/controls/OrbitControls.js" crossorigin>
 <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/postprocessing/EffectComposer.js" crossorigin>
 <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/postprocessing/UnrealBloomPass.js" crossorigin>
-<link rel="modulepreload" href="../main.js?v=dd1af678">
+<link rel="modulepreload" href="../main.js?v=ef3b06dd">
 </head>
 <body>
 <a class="skip mono" href="#work">Xem dự án ngay</a>
@@ -145,7 +145,7 @@
         <dl class="stats">
           <div><dt>2.855<small>m</small></dt><dd class="mono">Chiều dài cơ sở, zin</dd></div>
           <div><dt>3.1<small>M</small></dt><dd class="mono">Số tris gốc</dd></div>
-          <div><dt>14</dt><dd class="mono">Bản phối CMF</dd></div>
+          <div><dt>10</dt><dd class="mono">Bản phối CMF</dd></div>
         </dl>
       </div>
     </article>
@@ -153,7 +153,7 @@
     <article class="panel panel-left" data-cam="rear">
       <div class="panel-box">
         <p class="label mono">/ 02 &mdash; CMF</p>
-        <h2>Một thân xe, 14 bản phối</h2>
+        <h2>Một thân xe, 10 bản phối</h2>
         <p>Mỗi bộ tem được in lên UV atlas dựng riêng cho xe, nên nét tem chạy liền qua các khe ghép và chữ không bị ngược ở hai bên hông. Sơn bóng, satin, nhám và ngọc trai, đã so màu với ảnh chụp trong game.</p>
         <div class="swatches" id="skin-swatches" role="group" aria-label="Chọn tem xe"></div>
         <p class="label mono panel-cams-label" id="panel-cams-l">Góc máy</p>
@@ -336,7 +336,7 @@
   </footer>
 </main>
 
-<script type="module" src="../main.js?v=dd1af678"></script>
+<script type="module" src="../main.js?v=ef3b06dd"></script>
 <script>
   setTimeout(function () {
     var l = document.getElementById("loader");
@@ -378,6 +378,6 @@
     };
   });
 </script>
-<script src="../reveal.js?v=dd1af678" defer></script>
+<script src="../reveal.js?v=ef3b06dd" defer></script>
 </body>
 </html>

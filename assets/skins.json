@@ -58,13 +58,13 @@
    ]
   },
   "M_RimBadge_Max_D.dds": {
-   "image": "assets/skins/_base/M_RimBadge_Max_D.webp"
+   "image": "assets/skins/_base/M_RimBadge_Max_D.webp?v=1148f343"
   },
   "M_Rim_NoTintTurbofan_Max_D.dds": {
-   "image": "assets/skins/_base/M_Rim_NoTintTurbofan_Max_D.webp"
+   "image": "assets/skins/_base/M_Rim_NoTintTurbofan_Max_D.webp?v=1148f343"
   },
   "Metal___Chrome___Rough_dark_D.dds": {
-   "image": "assets/skins/_base/Metal___Chrome___Rough_dark_D.webp"
+   "image": "assets/skins/_base/Metal___Chrome___Rough_dark_D.webp?v=1148f343"
   },
   "Redmetal_D.dds": {
    "color": [
@@ -83,7 +83,7 @@
    ]
   },
   "carbon_weave_D.dds": {
-   "image": "assets/skins/_base/carbon_weave_D.webp"
+   "image": "assets/skins/_base/carbon_weave_D.webp?v=1148f343"
   },
   "glass_D.dds": {
    "color": [
@@ -118,7 +118,7 @@
    ]
   },
   "trim_black_D.dds": {
-   "image": "assets/skins/_base/trim_black_D.webp"
+   "image": "assets/skins/_base/trim_black_D.webp?v=1148f343"
   }
  },
  "skins": [
@@ -183,10 +183,10 @@
      ]
     },
     "M_RimBadge_Max_D.dds": {
-     "image": "assets/skins/24_hat_cyber/M_RimBadge_Max_D.webp"
+     "image": "assets/skins/24_hat_cyber/M_RimBadge_Max_D.webp?v=1148f343"
     },
     "M_Rim_NoTintTurbofan_Max_D.dds": {
-     "image": "assets/skins/24_hat_cyber/M_Rim_NoTintTurbofan_Max_D.webp"
+     "image": "assets/skins/24_hat_cyber/M_Rim_NoTintTurbofan_Max_D.webp?v=1148f343"
     },
     "Metal___Chrome___Rough_dark_D.dds": {
      "color": [
@@ -237,7 +237,7 @@
      ]
     },
     "paint.dds": {
-     "image": "assets/skins/24_hat_cyber/paint.webp"
+     "image": "assets/skins/24_hat_cyber/paint.webp?v=1148f343"
     },
     "rot_D.dds": {
      "color": [
@@ -259,145 +259,6 @@
    "swatch": [
     "#ffbd00",
     "#5e470f"
-   ]
-  },
-  {
-   "id": "20_hat_signal",
-   "name": "HAT Signal",
-   "overrides": {
-    "Caliper_D.dds": {
-     "color": [
-      1.0,
-      0.7412,
-      0.0,
-      1.0
-     ]
-    },
-    "Car_Paint___Black_grey_D.dds": {
-     "color": [
-      0.0549,
-      0.0549,
-      0.0588,
-      1.0
-     ]
-    },
-    "GLASS___windshield_001_D.dds": {
-     "color": [
-      0.4314,
-      0.502,
-      0.5412,
-      0.1765
-     ]
-    },
-    "GLASS___windshield_D.dds": {
-     "color": [
-      0.0941,
-      0.102,
-      0.1098,
-      0.1765
-     ]
-    },
-    "LAMP_ducktail_D.dds": {
-     "color": [
-      0.0118,
-      0.0118,
-      0.0118,
-      1.0
-     ]
-    },
-    "LAMP_headlamp_D.dds": {
-     "color": [
-      0.9294,
-      0.9412,
-      1.0,
-      1.0
-     ]
-    },
-    "LAMP_headlamp_L_D.dds": {
-     "color": [
-      0.8471,
-      0.902,
-      1.0,
-      1.0
-     ]
-    },
-    "M_RimBadge_Max_D.dds": {
-     "image": "assets/skins/20_hat_signal/M_RimBadge_Max_D.webp"
-    },
-    "M_Rim_NoTintTurbofan_Max_D.dds": {
-     "image": "assets/skins/20_hat_signal/M_Rim_NoTintTurbofan_Max_D.webp"
-    },
-    "Metal___Chrome___Rough_dark_D.dds": {
-     "color": [
-      0.0118,
-      0.0118,
-      0.0118,
-      1.0
-     ]
-    },
-    "Redmetal_D.dds": {
-     "color": [
-      1.0,
-      0.7412,
-      0.0,
-      1.0
-     ]
-    },
-    "Weis_D.dds": {
-     "color": [
-      0.2039,
-      0.2039,
-      0.2039,
-      1.0
-     ]
-    },
-    "carbon_weave_D.dds": {
-     "color": [
-      0.0118,
-      0.0118,
-      0.0118,
-      1.0
-     ]
-    },
-    "glass_D.dds": {
-     "color": [
-      0.0392,
-      0.0392,
-      0.0392,
-      0.2353
-     ]
-    },
-    "orangeglass__1_D.dds": {
-     "color": [
-      0.1176,
-      0.1176,
-      0.1255,
-      0.7451
-     ]
-    },
-    "paint.dds": {
-     "image": "assets/skins/20_hat_signal/paint.webp"
-    },
-    "rot_D.dds": {
-     "color": [
-      0.2039,
-      0.2039,
-      0.2039,
-      1.0
-     ]
-    },
-    "trim_black_D.dds": {
-     "color": [
-      0.0706,
-      0.0706,
-      0.0745,
-      1.0
-     ]
-    }
-   },
-   "swatch": [
-    "#ffbd00",
-    "#73562d"
    ]
   },
   {
@@ -461,10 +322,10 @@
      ]
     },
     "M_RimBadge_Max_D.dds": {
-     "image": "assets/skins/19_no_noise_club/M_RimBadge_Max_D.webp"
+     "image": "assets/skins/19_no_noise_club/M_RimBadge_Max_D.webp?v=1148f343"
     },
     "M_Rim_NoTintTurbofan_Max_D.dds": {
-     "image": "assets/skins/19_no_noise_club/M_Rim_NoTintTurbofan_Max_D.webp"
+     "image": "assets/skins/19_no_noise_club/M_Rim_NoTintTurbofan_Max_D.webp?v=1148f343"
     },
     "Metal___Chrome___Rough_dark_D.dds": {
      "color": [
@@ -515,7 +376,7 @@
      ]
     },
     "paint.dds": {
-     "image": "assets/skins/19_no_noise_club/paint.webp"
+     "image": "assets/skins/19_no_noise_club/paint.webp?v=1148f343"
     },
     "rot_D.dds": {
      "color": [
@@ -600,10 +461,10 @@
      ]
     },
     "M_RimBadge_Max_D.dds": {
-     "image": "assets/skins/18_silence_flex/M_RimBadge_Max_D.webp"
+     "image": "assets/skins/18_silence_flex/M_RimBadge_Max_D.webp?v=1148f343"
     },
     "M_Rim_NoTintTurbofan_Max_D.dds": {
-     "image": "assets/skins/18_silence_flex/M_Rim_NoTintTurbofan_Max_D.webp"
+     "image": "assets/skins/18_silence_flex/M_Rim_NoTintTurbofan_Max_D.webp?v=1148f343"
     },
     "Metal___Chrome___Rough_dark_D.dds": {
      "color": [
@@ -654,7 +515,7 @@
      ]
     },
     "paint.dds": {
-     "image": "assets/skins/18_silence_flex/paint.webp"
+     "image": "assets/skins/18_silence_flex/paint.webp?v=1148f343"
     },
     "rot_D.dds": {
      "color": [
@@ -739,10 +600,10 @@
      ]
     },
     "M_RimBadge_Max_D.dds": {
-     "image": "assets/skins/21_street_sessions/M_RimBadge_Max_D.webp"
+     "image": "assets/skins/21_street_sessions/M_RimBadge_Max_D.webp?v=1148f343"
     },
     "M_Rim_NoTintTurbofan_Max_D.dds": {
-     "image": "assets/skins/21_street_sessions/M_Rim_NoTintTurbofan_Max_D.webp"
+     "image": "assets/skins/21_street_sessions/M_Rim_NoTintTurbofan_Max_D.webp?v=1148f343"
     },
     "Metal___Chrome___Rough_dark_D.dds": {
      "color": [
@@ -793,7 +654,7 @@
      ]
     },
     "paint.dds": {
-     "image": "assets/skins/21_street_sessions/paint.webp"
+     "image": "assets/skins/21_street_sessions/paint.webp?v=1148f343"
     },
     "rot_D.dds": {
      "color": [
@@ -815,423 +676,6 @@
    "swatch": [
     "#061817",
     "#515b58"
-   ]
-  },
-  {
-   "id": "22_mw_gtr",
-   "name": "MW GTR",
-   "overrides": {
-    "Caliper_D.dds": {
-     "color": [
-      0.0863,
-      0.0863,
-      0.0902,
-      1.0
-     ]
-    },
-    "Car_Paint___Black_grey_D.dds": {
-     "color": [
-      0.7686,
-      0.7765,
-      0.7922,
-      1.0
-     ]
-    },
-    "GLASS___windshield_001_D.dds": {
-     "color": [
-      0.4314,
-      0.502,
-      0.5412,
-      0.1765
-     ]
-    },
-    "GLASS___windshield_D.dds": {
-     "color": [
-      0.0941,
-      0.102,
-      0.1098,
-      0.1765
-     ]
-    },
-    "LAMP_ducktail_D.dds": {
-     "color": [
-      0.0353,
-      0.1804,
-      0.4745,
-      1.0
-     ]
-    },
-    "LAMP_headlamp_D.dds": {
-     "color": [
-      0.9294,
-      0.9412,
-      1.0,
-      1.0
-     ]
-    },
-    "LAMP_headlamp_L_D.dds": {
-     "color": [
-      0.8471,
-      0.902,
-      1.0,
-      1.0
-     ]
-    },
-    "M_RimBadge_Max_D.dds": {
-     "image": "assets/skins/22_mw_gtr/M_RimBadge_Max_D.webp"
-    },
-    "M_Rim_NoTintTurbofan_Max_D.dds": {
-     "image": "assets/skins/22_mw_gtr/M_Rim_NoTintTurbofan_Max_D.webp"
-    },
-    "Metal___Chrome___Rough_dark_D.dds": {
-     "color": [
-      0.0353,
-      0.1804,
-      0.4745,
-      1.0
-     ]
-    },
-    "Redmetal_D.dds": {
-     "color": [
-      0.0863,
-      0.0863,
-      0.0902,
-      1.0
-     ]
-    },
-    "Weis_D.dds": {
-     "color": [
-      0.2039,
-      0.2039,
-      0.2039,
-      1.0
-     ]
-    },
-    "carbon_weave_D.dds": {
-     "color": [
-      0.0353,
-      0.1804,
-      0.4745,
-      1.0
-     ]
-    },
-    "glass_D.dds": {
-     "color": [
-      0.0392,
-      0.0392,
-      0.0392,
-      0.2353
-     ]
-    },
-    "orangeglass__1_D.dds": {
-     "color": [
-      0.1176,
-      0.1176,
-      0.1255,
-      0.7451
-     ]
-    },
-    "paint.dds": {
-     "image": "assets/skins/22_mw_gtr/paint.webp"
-    },
-    "rot_D.dds": {
-     "color": [
-      0.2039,
-      0.2039,
-      0.2039,
-      1.0
-     ]
-    },
-    "trim_black_D.dds": {
-     "color": [
-      0.0706,
-      0.0706,
-      0.0745,
-      1.0
-     ]
-    }
-   },
-   "swatch": [
-    "#8a8d93",
-    "#2e3b70"
-   ]
-  },
-  {
-   "id": "23_pursuit",
-   "name": "Pursuit",
-   "overrides": {
-    "Caliper_D.dds": {
-     "color": [
-      0.0863,
-      0.0863,
-      0.0902,
-      1.0
-     ]
-    },
-    "Car_Paint___Black_grey_D.dds": {
-     "color": [
-      0.7686,
-      0.7765,
-      0.7922,
-      1.0
-     ]
-    },
-    "GLASS___windshield_001_D.dds": {
-     "color": [
-      0.4314,
-      0.502,
-      0.5412,
-      0.1765
-     ]
-    },
-    "GLASS___windshield_D.dds": {
-     "color": [
-      0.0941,
-      0.102,
-      0.1098,
-      0.1765
-     ]
-    },
-    "LAMP_ducktail_D.dds": {
-     "color": [
-      0.0157,
-      0.0157,
-      0.0157,
-      1.0
-     ]
-    },
-    "LAMP_headlamp_D.dds": {
-     "color": [
-      0.9294,
-      0.9412,
-      1.0,
-      1.0
-     ]
-    },
-    "LAMP_headlamp_L_D.dds": {
-     "color": [
-      0.8471,
-      0.902,
-      1.0,
-      1.0
-     ]
-    },
-    "M_RimBadge_Max_D.dds": {
-     "image": "assets/skins/23_pursuit/M_RimBadge_Max_D.webp"
-    },
-    "M_Rim_NoTintTurbofan_Max_D.dds": {
-     "image": "assets/skins/23_pursuit/M_Rim_NoTintTurbofan_Max_D.webp"
-    },
-    "Metal___Chrome___Rough_dark_D.dds": {
-     "color": [
-      0.0157,
-      0.0157,
-      0.0157,
-      1.0
-     ]
-    },
-    "Redmetal_D.dds": {
-     "color": [
-      0.0863,
-      0.0863,
-      0.0902,
-      1.0
-     ]
-    },
-    "Weis_D.dds": {
-     "color": [
-      0.2039,
-      0.2039,
-      0.2039,
-      1.0
-     ]
-    },
-    "carbon_weave_D.dds": {
-     "color": [
-      0.0157,
-      0.0157,
-      0.0157,
-      1.0
-     ]
-    },
-    "glass_D.dds": {
-     "color": [
-      0.0392,
-      0.0392,
-      0.0392,
-      0.2353
-     ]
-    },
-    "orangeglass__1_D.dds": {
-     "color": [
-      0.1176,
-      0.1176,
-      0.1255,
-      0.7451
-     ]
-    },
-    "paint.dds": {
-     "image": "assets/skins/23_pursuit/paint.webp"
-    },
-    "rot_D.dds": {
-     "color": [
-      0.2039,
-      0.2039,
-      0.2039,
-      1.0
-     ]
-    },
-    "trim_black_D.dds": {
-     "color": [
-      0.0706,
-      0.0706,
-      0.0745,
-      1.0
-     ]
-    }
-   },
-   "swatch": [
-    "#e8e7e3",
-    "#3f3f3e"
-   ]
-  },
-  {
-   "id": "10_volt_white",
-   "name": "HAT Volt White",
-   "overrides": {
-    "Caliper_D.dds": {
-     "color": [
-      0.0863,
-      0.0863,
-      0.0902,
-      1.0
-     ]
-    },
-    "Car_Paint___Black_grey_D.dds": {
-     "color": [
-      0.8863,
-      0.8824,
-      0.8706,
-      1.0
-     ]
-    },
-    "GLASS___windshield_001_D.dds": {
-     "color": [
-      0.4314,
-      0.502,
-      0.5412,
-      0.1765
-     ]
-    },
-    "GLASS___windshield_D.dds": {
-     "color": [
-      0.0941,
-      0.102,
-      0.1098,
-      0.1765
-     ]
-    },
-    "LAMP_ducktail_D.dds": {
-     "color": [
-      0.8314,
-      0.8627,
-      0.1098,
-      1.0
-     ]
-    },
-    "LAMP_headlamp_D.dds": {
-     "color": [
-      0.9294,
-      0.9412,
-      1.0,
-      1.0
-     ]
-    },
-    "LAMP_headlamp_L_D.dds": {
-     "color": [
-      0.8471,
-      0.902,
-      1.0,
-      1.0
-     ]
-    },
-    "M_RimBadge_Max_D.dds": {
-     "image": "assets/skins/10_volt_white/M_RimBadge_Max_D.webp"
-    },
-    "M_Rim_NoTintTurbofan_Max_D.dds": {
-     "image": "assets/skins/10_volt_white/M_Rim_NoTintTurbofan_Max_D.webp"
-    },
-    "Metal___Chrome___Rough_dark_D.dds": {
-     "color": [
-      0.8314,
-      0.8627,
-      0.1098,
-      1.0
-     ]
-    },
-    "Redmetal_D.dds": {
-     "color": [
-      0.0863,
-      0.0863,
-      0.0902,
-      1.0
-     ]
-    },
-    "Weis_D.dds": {
-     "color": [
-      0.2039,
-      0.2039,
-      0.2039,
-      1.0
-     ]
-    },
-    "carbon_weave_D.dds": {
-     "color": [
-      0.8314,
-      0.8627,
-      0.1098,
-      1.0
-     ]
-    },
-    "glass_D.dds": {
-     "color": [
-      0.0392,
-      0.0392,
-      0.0392,
-      0.2353
-     ]
-    },
-    "orangeglass__1_D.dds": {
-     "color": [
-      0.1176,
-      0.1176,
-      0.1255,
-      0.7451
-     ]
-    },
-    "paint.dds": {
-     "image": "assets/skins/10_volt_white/paint.webp"
-    },
-    "rot_D.dds": {
-     "color": [
-      0.2039,
-      0.2039,
-      0.2039,
-      1.0
-     ]
-    },
-    "trim_black_D.dds": {
-     "color": [
-      0.0706,
-      0.0706,
-      0.0745,
-      1.0
-     ]
-    }
-   },
-   "swatch": [
-    "#6e747d",
-    "#101013"
    ]
   },
   {
@@ -1295,10 +739,10 @@
      ]
     },
     "M_RimBadge_Max_D.dds": {
-     "image": "assets/skins/15_insteroid/M_RimBadge_Max_D.webp"
+     "image": "assets/skins/15_insteroid/M_RimBadge_Max_D.webp?v=1148f343"
     },
     "M_Rim_NoTintTurbofan_Max_D.dds": {
-     "image": "assets/skins/15_insteroid/M_Rim_NoTintTurbofan_Max_D.webp"
+     "image": "assets/skins/15_insteroid/M_Rim_NoTintTurbofan_Max_D.webp?v=1148f343"
     },
     "Metal___Chrome___Rough_dark_D.dds": {
      "color": [
@@ -1349,7 +793,7 @@
      ]
     },
     "paint.dds": {
-     "image": "assets/skins/15_insteroid/paint.webp"
+     "image": "assets/skins/15_insteroid/paint.webp?v=1148f343"
     },
     "rot_D.dds": {
      "color": [
@@ -1434,10 +878,10 @@
      ]
     },
     "M_RimBadge_Max_D.dds": {
-     "image": "assets/skins/08_solar_yellow/M_RimBadge_Max_D.webp"
+     "image": "assets/skins/08_solar_yellow/M_RimBadge_Max_D.webp?v=1148f343"
     },
     "M_Rim_NoTintTurbofan_Max_D.dds": {
-     "image": "assets/skins/08_solar_yellow/M_Rim_NoTintTurbofan_Max_D.webp"
+     "image": "assets/skins/08_solar_yellow/M_Rim_NoTintTurbofan_Max_D.webp?v=1148f343"
     },
     "Metal___Chrome___Rough_dark_D.dds": {
      "color": [
@@ -1488,7 +932,7 @@
      ]
     },
     "paint.dds": {
-     "image": "assets/skins/08_solar_yellow/paint.webp"
+     "image": "assets/skins/08_solar_yellow/paint.webp?v=1148f343"
     },
     "rot_D.dds": {
      "color": [
@@ -1573,10 +1017,10 @@
      ]
     },
     "M_RimBadge_Max_D.dds": {
-     "image": "assets/skins/14_bubblegum/M_RimBadge_Max_D.webp"
+     "image": "assets/skins/14_bubblegum/M_RimBadge_Max_D.webp?v=1148f343"
     },
     "M_Rim_NoTintTurbofan_Max_D.dds": {
-     "image": "assets/skins/14_bubblegum/M_Rim_NoTintTurbofan_Max_D.webp"
+     "image": "assets/skins/14_bubblegum/M_Rim_NoTintTurbofan_Max_D.webp?v=1148f343"
     },
     "Metal___Chrome___Rough_dark_D.dds": {
      "color": [
@@ -1627,7 +1071,7 @@
      ]
     },
     "paint.dds": {
-     "image": "assets/skins/14_bubblegum/paint.webp"
+     "image": "assets/skins/14_bubblegum/paint.webp?v=1148f343"
     },
     "rot_D.dds": {
      "color": [
@@ -1752,7 +1196,7 @@
      ]
     },
     "paint.dds": {
-     "image": "assets/skins/16_frost_neon/paint.webp"
+     "image": "assets/skins/16_frost_neon/paint.webp?v=1148f343"
     },
     "rot_D.dds": {
      "color": [
@@ -1837,10 +1281,10 @@
      ]
     },
     "M_RimBadge_Max_D.dds": {
-     "image": "assets/skins/17_pink_fade/M_RimBadge_Max_D.webp"
+     "image": "assets/skins/17_pink_fade/M_RimBadge_Max_D.webp?v=1148f343"
     },
     "M_Rim_NoTintTurbofan_Max_D.dds": {
-     "image": "assets/skins/17_pink_fade/M_Rim_NoTintTurbofan_Max_D.webp"
+     "image": "assets/skins/17_pink_fade/M_Rim_NoTintTurbofan_Max_D.webp?v=1148f343"
     },
     "Redmetal_D.dds": {
      "color": [
@@ -1883,7 +1327,7 @@
      ]
     },
     "paint.dds": {
-     "image": "assets/skins/17_pink_fade/paint.webp"
+     "image": "assets/skins/17_pink_fade/paint.webp?v=1148f343"
     },
     "rot_D.dds": {
      "color": [
@@ -2000,7 +1444,7 @@
      ]
     },
     "paint.dds": {
-     "image": "assets/skins/13_chameleon_violet/paint.webp"
+     "image": "assets/skins/13_chameleon_violet/paint.webp?v=1148f343"
     },
     "rot_D.dds": {
      "color": [
