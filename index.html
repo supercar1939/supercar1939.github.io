@@ -40,7 +40,7 @@
 <link rel="alternate" hreflang="en" href="https://huyanhtran.com/">
 <link rel="alternate" hreflang="vi" href="https://huyanhtran.com/vi/">
 <link rel="icon" href="assets/favicon.png" type="image/png">
-<link rel="stylesheet" href="styles.css?v=74c5ee5d">
+<link rel="stylesheet" href="styles.css?v=dd1af678">
 <script type="importmap">
 { "imports": {
   "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
@@ -57,7 +57,7 @@
 <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/controls/OrbitControls.js" crossorigin>
 <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/postprocessing/EffectComposer.js" crossorigin>
 <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/postprocessing/UnrealBloomPass.js" crossorigin>
-<link rel="modulepreload" href="main.js?v=74c5ee5d">
+<link rel="modulepreload" href="main.js?v=dd1af678">
 </head>
 <body>
 <a class="skip mono" href="#work">Skip to work</a>
@@ -336,7 +336,7 @@
   </footer>
 </main>
 
-<script type="module" src="main.js?v=74c5ee5d"></script>
+<script type="module" src="main.js?v=dd1af678"></script>
 <script>
   setTimeout(function () {
     var l = document.getElementById("loader");
@@ -350,6 +350,7 @@
     var run = document.querySelector(".ticker-run"), set = run.innerHTML, n = 1;
     function fill() {
       var half = run.scrollWidth / (2 * n);              // one copy of the list, as written in the HTML
+      if (!half) return;                                  // not laid out (hidden): try again on the next resize
       var k = Math.max(1, Math.ceil(innerWidth / half));
       if (k === n) return;
       n = k;
@@ -358,6 +359,7 @@
     }
     fill();
     addEventListener("resize", fill);
+    if (document.fonts) document.fonts.ready.then(fill);   // the mono webfont can change the width once it loads
   })();
   document.getElementById("ticker-toggle").onclick = function () {
     var on = this.getAttribute("aria-pressed") !== "true";
@@ -376,6 +378,6 @@
     };
   });
 </script>
-<script src="reveal.js?v=74c5ee5d" defer></script>
+<script src="reveal.js?v=dd1af678" defer></script>
 </body>
 </html>
